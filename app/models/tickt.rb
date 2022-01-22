@@ -1,0 +1,2 @@
+class Tickt < ApplicationRecord
+end

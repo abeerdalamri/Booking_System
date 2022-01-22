@@ -1,0 +1,32 @@
+<%= form_with(model: tickt) do |form| %>
+  <% if tickt.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(tickt.errors.count, "error") %> prohibited this tickt from being saved:</h2>
+
+      <ul>
+        <% tickt.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :reference, style: "display: block" %>
+    <%= form.number_field :reference %>
+  </div>
+
+  <div>
+    <%= form.label :price, style: "display: block" %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
