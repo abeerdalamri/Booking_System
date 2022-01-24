@@ -26,4 +26,10 @@ or
 ```
 rails server
 ```
+Open your browser at "localhost:3000"
+
+## Screenshots
+[demoq](https://user-images.githubusercontent.com/97512710/150773289-f72f991f-5d50-4ac9-9a3e-a5fd5f6187b0.png)
+
+[demo2](https://user-images.githubusercontent.com/97512710/150773374-e80c495b-d66e-4512-abdf-e31de9eccb73.png)
 
