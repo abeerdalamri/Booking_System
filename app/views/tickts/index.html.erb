@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tickts</h1>
+
+<div id="tickts">
+  <% @tickts.each do |tickt| %>
+    <%= render tickt %>
+    <p>
+      <%= link_to "Show this tickt", tickt %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New tickt", new_tickt_path %>
